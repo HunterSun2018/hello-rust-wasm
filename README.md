@@ -17,7 +17,7 @@ curl -sL https://deb.nodesource.com/setup_10.x | bash -
 apt-get install -y nodejs
 ```
 
-##2. Add a user to npm
+## 2. Add a user to npm
 ```shell
 $ npm adduser
 Username: huntersun2018
@@ -26,12 +26,12 @@ Email: (this IS public) HunterSun2018@gmail.com
 Logged in as huntersun2018 on https://registry.npmjs.org/.
 ```
 
-##3. Create a new Cargo project
+## 3. Create a new Cargo project
 ```shell
 $ cargo new --lib hello-wasm
 ```
 
-## 3. Source code
+## 4. Source code
 
 ```rust
 use wasm_bindgen::prelude::*;
@@ -47,7 +47,7 @@ pub fn greet(name: &str) {
 }
 ```
 
-##4. Cargo.toml
+## 5. Cargo.toml
 
 ```rust
 [package]
